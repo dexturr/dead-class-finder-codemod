@@ -24,20 +24,24 @@ export default function transformer(file, api) {
         const { value } = statement;
         const newbody = value
           .body
-          .concat(j.expressionStatement(
-            j.callExpression(
-              j.identifier(
-                'registerCssClasses'
-              ),
-              [
+          .slice(0, 1)
+          .concat(
+            j.expressionStatement(
+              j.callExpression(
                 j.identifier(
-                  'hooks'
+                  'registerCssClasses'
                 ),
-              ]
-            )
-          ));
+                [
+                  j.identifier(
+                    'hooks'
+                  ),
+                ]
+              )
+            ))
+          .concat(value.body.slice(1));
         const newStatmenet = j.blockStatement(newbody);
         statement.replace(newStatmenet);
       })
       .toSource();
   }
+  
