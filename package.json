@@ -1,0 +1,24 @@
+{
+  "name": "dead-class-finder-codemod",
+  "version": "0.0.1",
+  "description": "A codemod for ember-cli-dead-class-finder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'no tests'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dexturr/dead-class-finder-codemod.git"
+  },
+  "keywords": [
+    "jscodeshift",
+    "ember",
+    "dead-class-finder"
+  ],
+  "author": "Dexter Edwards",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dexturr/dead-class-finder-codemod/issues"
+  },
+  "homepage": "https://github.com/dexturr/dead-class-finder-codemod#readme"
+}
