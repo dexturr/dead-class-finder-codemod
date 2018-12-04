@@ -11,6 +11,6 @@ If you do not have `jscodeshift` installed globally, then run:
 
 To perform the transformation run the following commands:
 
-`jscodeshift -t https://raw.githubusercontent.com/dexturr/dead-class-finder-codemod/master/index.js ./tests/acceptance`
+`jscodeshift -t https://raw.githubusercontent.com/dexturr/dead-class-finder-codemod/master/acceptance.js ./tests/acceptance`
 
-`jscodeshift -t https://raw.githubusercontent.com/dexturr/dead-class-finder-codemod/master/index.js ./tests/integration`
+`jscodeshift -t https://raw.githubusercontent.com/dexturr/dead-class-finder-codemod/master/integration.js ./tests/integration`
